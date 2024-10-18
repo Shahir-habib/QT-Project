@@ -16,6 +16,12 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    void colorPoint(int x, int y,int ri,bool f);
+    void drawGrids();
+    void shoot();
+    void delay();
+private slots:
+    void on_fire_clicked();
 
 private:
     Ui::MainWindow *ui;
